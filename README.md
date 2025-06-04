@@ -1,9 +1,11 @@
 # Dev é Tudo!
 
 <p align="center">
-  <img src="assets/dark-mode.png" alt="Visão geral do projeto no modo escuro" width="800">
+  <img src="assets/img_Black.png" alt="Visão geral do projeto no modo escuro" width="800">
   <br>
-  <img src="assets/light-mode.png" alt="Visão geral do projeto no modo claro" width="800">
+  <img src="assets/img_Light.png" alt="Visão geral do projeto no modo claro" width="800">
+  <br>
+  <img src="assets/Front_End.png" alt="Visão geral do projeto no modo claro" width="800">
 </p>
 
 Projeto visual e interativo que reúne as principais tecnologias utilizadas no universo de desenvolvimento de software. Ideal para programadores iniciantes e experientes que desejam explorar rapidamente ferramentas, linguagens, frameworks e plataformas importantes no mercado.
