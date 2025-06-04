@@ -1,0 +1,140 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light {
+  background-color: #f4f4f4;
+  color: #111;
+}
+
+/* Top Navigation */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.top-nav h1 {
+  font-size: 1.5em;
+  color: #00ffcc;
+}
+
+.nav-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.filter-group {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-btn {
+  padding: 6px 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.filter-btn.active {
+  background-color: #00ffcc;
+  color: #000;
+}
+
+#theme-toggle {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#theme-toggle:hover {
+  transform: rotate(90deg);
+}
+
+/* Light Theme Buttons */
+body.light .filter-btn,
+body.light #theme-toggle {
+  background-color: #ccc;
+  color: #111;
+}
+
+body.light .filter-btn.active {
+  background-color: #00ffcc;
+  color: #000;
+}
+
+/* Main Content */
+.content {
+  padding: 40px 30px;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card.hidden {
+  display: none;
+}
+
+.logo {
+  max-width: 100px;
+  margin: 0 auto 10px;
+  transition: filter 0.3s ease;
+}
+
+.tech-name {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+/* Light Theme Cards */
+body.light .card {
+  background-color: #fff;
+  color: #111;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}

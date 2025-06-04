@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dev é tudo!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <h1>Dev é tudo!</h1>
+
+    <div class="nav-right">
+      <div class="filter-group">
+        <button class="filter-btn active" data-category="all">Todos</button>
+        <button class="filter-btn" data-category="frontend">Frontend</button>
+        <button class="filter-btn" data-category="backend">Backend</button>
+        <button class="filter-btn" data-category="mobile">Mobile</button>
+        <button class="filter-btn" data-category="cloud">Cloud</button>
+        <button class="filter-btn" data-category="tools">Tools</button>
+      </div>
+
+      <button id="theme-toggle" title="Alternar tema">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="tech-grid" id="techGrid">
+
+      <!-- FRONTEND -->
+      <div class="card frontend" data-url="https://developer.mozilla.org/pt-BR/docs/Web/HTML"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"  class="logo" alt="HTML5">
+        <div class="tech-name">HTML5</div>
+        <div class="quote">"Estrutura da web."</div>
+      </div>
+
+      <div class="card frontend" data-url="https://developer.mozilla.org/pt-BR/docs/Web/CSS"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"  class="logo" alt="CSS3">
+        <div class="tech-name">CSS3</div>
+        <div class="quote">"Estilo com responsabilidade."</div>
+      </div>
+
+      <div class="card frontend" data-url="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"  class="logo" alt="JavaScript">
+        <div class="tech-name">JavaScript</div>
+        <div class="quote">"O coração da interatividade."</div>
+      </div>
+
+      <div class="card frontend" data-url="https://react.dev/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"  class="logo" alt="React">
+        <div class="tech-name">React</div>
+        <div class="quote">"UIs dinâmicas com facilidade."</div>
+      </div>
+
+      <div class="card frontend" data-url="https://vuejs.org/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"  class="logo" alt="Vue.js">
+        <div class="tech-name">Vue.js</div>
+        <div class="quote">"Framework progressivo."</div>
+      </div>
+
+      <div class="card frontend" data-url="https://getbootstrap.com/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"  class="logo" alt="Bootstrap">
+        <div class="tech-name">Bootstrap</div>
+        <div class="quote">"Design rápido e responsivo."</div>
+      </div>
+
+      <div class="card frontend" data-url="https://tailwindcss.com/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"  class="logo" alt="TailwindCSS">
+        <div class="tech-name">TailwindCSS</div>
+        <div class="quote">"Design diretamente no HTML."</div>
+      </div>
+
+      <div class="card frontend" data-url="https://vitejs.dev/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"  class="logo" alt="Vite">
+        <div class="tech-name">Vite</div>
+        <div class="quote">"Ferramenta de build rápida para front-end."</div>
+      </div>
+
+      <!-- BACKEND -->
+      <div class="card backend" data-url="https://nodejs.org/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"  class="logo" alt="Node.js">
+        <div class="tech-name">Node.js</div>
+        <div class="quote">"Rodando JS no servidor."</div>
+      </div>
+
+      <div class="card backend" data-url="https://www.php.net/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"  class="logo" alt="PHP">
+        <div class="tech-name">PHP</div>
+        <div class="quote">"Backend desde sempre."</div>
+      </div>
+
+      <div class="card backend" data-url="https://laravel.com/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"  class="logo" alt="Laravel">
+        <div class="tech-name">Laravel</div>
+        <div class="quote">"Framework PHP elegante e poderoso."</div>
+      </div>
+
+      <div class="card backend" data-url="https://www.python.org/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"  class="logo" alt="Python">
+        <div class="tech-name">Python</div>
+        <div class="quote">"Claro, elegante e poderoso."</div>
+      </div>
+
+      <div class="card backend" data-url="https://go.dev/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg"  class="logo" alt="Go">
+        <div class="tech-name">Go</div>
+        <div class="quote">"Linguagem simples, rápida e concorrente."</div>
+      </div>
+
+      <div class="card backend" data-url="https://www.ruby-lang.org/pt/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original.svg"  class="logo" alt="Ruby">
+        <div class="tech-name">Ruby</div>
+        <div class="quote">"Produtividade com elegância."</div>
+      </div>
+
+      <div class="card backend" data-url="https://www.java.com/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"  class="logo" alt="Java">
+        <div class="tech-name">Java</div>
+        <div class="quote">"Escreva uma vez, rode em qualquer lugar."</div>
+      </div>
+
+      <div class="card backend" data-url="https://www.mysql.com/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"  class="logo" alt="MySQL">
+        <div class="tech-name">MySQL</div>
+        <div class="quote">"Dados bem guardados."</div>
+      </div>
+
+      <!-- MOBILE -->
+      <div class="card mobile" data-url="https://developer.android.com/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg"  class="logo" alt="Android">
+        <div class="tech-name">Android</div>
+        <div class="quote">"Plataforma móvel mais usada do mundo."</div>
+      </div>
+
+      <div class="card mobile" data-url="https://developer.apple.com/swift/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg"  class="logo" alt="Swift">
+        <div class="tech-name">Swift</div>
+        <div class="quote">"Desenvolvimento iOS moderno."</div>
+      </div>
+
+      <!-- CLOUD -->
+      <div class="card cloud" data-url="https://aws.amazon.com/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"  class="logo" alt="AWS">
+        <div class="tech-name">AWS</div>
+        <div class="quote">"Infraestrutura escalável na nuvem."</div>
+      </div>
+
+      <div class="card cloud" data-url="https://azure.microsoft.com/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"  class="logo" alt="Microsoft Azure">
+        <div class="tech-name">Microsoft Azure</div>
+        <div class="quote">"Soluções de nuvem da Microsoft."</div>
+      </div>
+
+      <!-- TOOLS -->
+      <div class="card tools" data-url="https://git-scm.com/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"  class="logo" alt="Git">
+        <div class="tech-name">Git</div>
+        <div class="quote">"Controle de versão ninja."</div>
+      </div>
+
+      <div class="card tools" data-url="https://github.com/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"  class="logo" alt="GitHub">
+        <div class="tech-name">GitHub</div>
+        <div class="quote">"Repositórios sob controle."</div>
+      </div>
+
+      <div class="card tools" data-url="https://code.visualstudio.com/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"  class="logo" alt="VSCode">
+        <div class="tech-name">VSCode</div>
+        <div class="quote">"Meu playground preferido."</div>
+      </div>
+
+      <div class="card tools" data-url="https://www.docker.com/"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"  class="logo" alt="Docker">
+        <div class="tech-name">Docker</div>
+        <div class="quote">"Empacotamento perfeito."</div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
